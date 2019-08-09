@@ -8,7 +8,7 @@
 # Dataset
 The dataset we used can be downloaded from https://grouplens.org/datasets/movielens/
 
-# cosine similiarity base on user/item
+# Cosine similiarity base on user/item
 def cos_sim(user_dict1, user_dict2):
     set_all = set(user_dict1) | set(user_dict2)
     set_and = set(user_dict1) & set(user_dict2)
@@ -21,7 +21,7 @@ def cos_sim(user_dict1, user_dict2):
     return score
 This part of code used to calculate the cosine similiarity of users. The code structure of item is really similar. Put two user dictionaries into the cosine_similarity function to get the score and the score will be record in dictionary like dict[user1][user2].
 
-# euclidean distance base on user/item
+# Euclidean distance base on user/item
 def euclidean_sim(user_dict1, user_dict2):
     set_all = set(user_dict1) | set(user_dict2)
     set_and = set(user_dict1) & set(user_dict2)
@@ -37,7 +37,7 @@ def euclidean_sim(user_dict1, user_dict2):
     return score
 This part of code used to calculate the euclidean distance of users. The code structure of item is really similar. Use the formula of euclidean distance to get the score and the score will be record in dictionary like dict[user1][user2].
 
-# weighted euclidean distance base on user/item
+# Weighted euclidean distance base on user/item
 def weighted_euclidean_sim(user_dict1, user_dict2):
     set_all = set(user_dict1) | set(user_dict2)
     set_and = set(user_dict1) & set(user_dict2)
@@ -55,7 +55,7 @@ def weighted_euclidean_sim(user_dict1, user_dict2):
     return score
 This part of code used to calculate the weighted euclidean distance of users. It uses an improved formula to caculate the distance which may improve the result.
 
-# jaccard similiarity base on user/item
+# Jaccard similiarity base on user/item
 def jaccard_sim(user_dict1, user_dict2):
     # RSME1.1305770943451297
     set_all = set(user_dict1) | set(user_dict2)
