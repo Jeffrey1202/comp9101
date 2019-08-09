@@ -63,6 +63,7 @@ def jaccard_sim(user_dict1, user_dict2):
     return len(set_and) / len(set_all)
 This part of code used to calculate the jaccard similiarity of users.
 
+# Evaluation
 We run each module to get the RSME of them to compare their performance. We use RSEM to measure the deviation between the PREDICTED value and the true value. The smaller RSME, the smaller the prediction error.
 We also use recall and precision to evaluate the performance of the module.
   
